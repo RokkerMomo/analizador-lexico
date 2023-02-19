@@ -1,0 +1,10 @@
+BEGIN	PR
+a	IDEN
+=	Asignacion
+b	IDEN
++	OP_Airmetico
+c	IDEN
+^	OP_Airmetico
+9	NUM
+;	IDEN
+END	PR
