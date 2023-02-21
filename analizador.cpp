@@ -13,7 +13,6 @@ string checkspace = "";
 string palabra = "";
 string caracter = "";
 int saltar = 1;
-int salir = 1;
 
 //funcion para comprobar numeros de mas de un digito
 bool isNumber(const string& s)
@@ -26,7 +25,7 @@ bool isNumber(const string& s)
 }
 
 //Codigo que se va a compilar
-string codigo = "VARIABLES variable1=25. variable2=30. variable3=84. BEGIN resultado=variable1/( variable2*variable3 ). END";
+string codigo = "VARIABLES variable1=25. variable2=30. variable3=84. BEGIN resultado=variable1/(variable2*variable3). END";
 
 //inicio
 int main(){
@@ -43,7 +42,7 @@ for(std::string::size_type i = 0; i < str.size(); ++i) {
     caracter = str[i];
 
     //revisa si ya termino la palabra o si el caracter actual es un operador
-    if (checkspace == " " || str[i] == str.back() || checkspace == "=" || checkspace == "+" || checkspace == "^" || checkspace == "-" || checkspace == "*" || checkspace == "/" || checkspace == "." || caracter == "=" || caracter == "+" || caracter == "^" || caracter == "-" || caracter == "*" || caracter == "/" || caracter == ".")
+    if (checkspace == " " || str[i] == str.back() || checkspace == "=" || checkspace == "+" || checkspace == "^" || checkspace == "-" || checkspace == "*" || checkspace == "/" || checkspace == "." || caracter == "=" || caracter == "+" || caracter == "^" || caracter == "-" || caracter == "*" || caracter == "/" || caracter == "." || checkspace == "(" || caracter == "(" || checkspace == ")" || caracter == ")")
     {
         //variable de salto
         saltar = 1;
@@ -55,7 +54,7 @@ for(std::string::size_type i = 0; i < str.size(); ++i) {
         
         
         //revisa si el siguiente caracter es un operador para no realizar el salto
-        if (checkspace == "=" || checkspace == "+" || checkspace == "^" || checkspace == "-" || checkspace == "*" || checkspace == "/" || checkspace == "." || caracter == "=" || caracter == "+" || caracter == "^" || caracter == "-" || caracter == "*" || caracter == "/")
+        if (checkspace == "=" || checkspace == "+" || checkspace == "^" || checkspace == "-" || checkspace == "*" || checkspace == "/" || checkspace == "." || caracter == "=" || caracter == "+" || caracter == "^" || caracter == "-" || caracter == "*" || caracter == "/" || checkspace == "(" || caracter == "(" || checkspace == ")" || caracter == ")")
         {
             saltar=0; 
         }
