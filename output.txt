@@ -1,26 +1,21 @@
 TOKEN	LEXENA
 VARIABLES	PR
-variable1	IDEN
+x	IDEN
 =	Asignacion
-25	NUM
+5	NUM
 .	Finalizador
-variable2	IDEN
+y	IDEN
 =	Asignacion
-30	NUM
+10	NUM
 .	Finalizador
-variable3	IDEN
+w	IDEN
 =	Asignacion
-84	NUM
+ 25	IDEN
 .	Finalizador
 BEGIN	PR
-resultado	IDEN
+op	IDEN
 =	Asignacion
-variable1	IDEN
-/	OP_Airmetico
-(	Agrupador
-variable2	IDEN
-*	OP_Airmetico
-variable3	IDEN
-)	Agrupador
+ x	IDEN
++	OP_Airmetico
 .	Finalizador
 END	PR
