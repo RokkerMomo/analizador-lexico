@@ -7,6 +7,8 @@
 #include <string>
 #include <vector>
 
+
+
 using namespace std;
 
 //Variables
@@ -28,6 +30,8 @@ bool cerrarexp = false;
 bool igualdad = false;
 int prueba = 0;
 
+
+
 //funcion para comprobar numeros de mas de un digito
 bool isNumber(const string& s)
 {
@@ -40,6 +44,8 @@ bool isNumber(const string& s)
 
 //Codigo que se va a compilar
 string codigo = "VARIABLES x=5. y=10. w = 25. BEGIN op = x+(y*w). END";
+
+
 
 
 void red () {
@@ -209,7 +215,7 @@ for (size_t i = 0; i < wtf; i++)
 
 for (size_t i = 0; i < wtf; i++)
 {
-    std::cout << words[i] << "\n";
+    // std::cout << words[i] << "\n";
 
 
     if (words[i]=="=")

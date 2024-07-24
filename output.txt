@@ -17,5 +17,10 @@ op	IDEN
 =	Asignacion
  x	IDEN
 +	OP_Airmetico
+(	Agrupador
+y	IDEN
+*	OP_Airmetico
+w	IDEN
+)	Agrupador
 .	Finalizador
 END	PR
